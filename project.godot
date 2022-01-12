@@ -1,0 +1,166 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Edge",
+"language": "GDScript",
+"path": "res://generator/graph/Edge.gd"
+}, {
+"base": "Reference",
+"class": "GeneratorGraph",
+"language": "GDScript",
+"path": "res://generator/graph/GeneratorGraph.gd"
+}, {
+"base": "Reference",
+"class": "GeneratorMain",
+"language": "GDScript",
+"path": "res://generator/GeneratorMain.gd"
+}, {
+"base": "Reference",
+"class": "GeneratorSpace",
+"language": "GDScript",
+"path": "res://generator/space/GeneratorSpace.gd"
+}, {
+"base": "Reference",
+"class": "Graph",
+"language": "GDScript",
+"path": "res://generator/graph/Graph.gd"
+}, {
+"base": "Node2D",
+"class": "GraphDrawer",
+"language": "GDScript",
+"path": "res://generator/graphDrawing/GraphDrawer.gd"
+}, {
+"base": "Reference",
+"class": "IRule",
+"language": "GDScript",
+"path": "res://generator/graph/rules/IRule.gd"
+}, {
+"base": "IRule",
+"class": "RuleExtend1",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleExtend1.gd"
+}, {
+"base": "IRule",
+"class": "RuleExtend2",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleExtend2.gd"
+}, {
+"base": "IRule",
+"class": "RuleExtend3",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleExtend3.gd"
+}, {
+"base": "IRule",
+"class": "RuleInit1",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleInit1.gd"
+}, {
+"base": "IRule",
+"class": "RuleInit2",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleInit2.gd"
+}, {
+"base": "IRule",
+"class": "RuleKL1",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleKL1.gd"
+}, {
+"base": "IRule",
+"class": "RuleKL2",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleKL2.gd"
+}, {
+"base": "IRule",
+"class": "RuleKL3",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleKL3.gd"
+}, {
+"base": "IRule",
+"class": "RuleKL4",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleKL4.gd"
+}, {
+"base": "IRule",
+"class": "RuleOR1",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleOR1.gd"
+}, {
+"base": "IRule",
+"class": "RuleOR2",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleOR2.gd"
+}, {
+"base": "IRule",
+"class": "RuleSecret",
+"language": "GDScript",
+"path": "res://generator/graph/rules/RuleSecret.gd"
+}, {
+"base": "Reference",
+"class": "ShortestPath",
+"language": "GDScript",
+"path": "res://generator/graph/fitness/ShortesPath.gd"
+}, {
+"base": "Reference",
+"class": "Step",
+"language": "GDScript",
+"path": "res://generator/graph/Step.gd"
+}, {
+"base": "Reference",
+"class": "Vertex",
+"language": "GDScript",
+"path": "res://generator/graph/Vertex.gd"
+} ]
+_global_script_class_icons={
+"Edge": "",
+"GeneratorGraph": "",
+"GeneratorMain": "",
+"GeneratorSpace": "",
+"Graph": "",
+"GraphDrawer": "",
+"IRule": "",
+"RuleExtend1": "",
+"RuleExtend2": "",
+"RuleExtend3": "",
+"RuleInit1": "",
+"RuleInit2": "",
+"RuleKL1": "",
+"RuleKL2": "",
+"RuleKL3": "",
+"RuleKL4": "",
+"RuleOR1": "",
+"RuleOR2": "",
+"RuleSecret": "",
+"ShortestPath": "",
+"Step": "",
+"Vertex": ""
+}
+
+[application]
+
+config/name="level generator mission progressive"
+config/icon="res://icon.png"
+
+[global]
+
+log=false
+
+[logging]
+
+file_logging/enable_file_logging=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
